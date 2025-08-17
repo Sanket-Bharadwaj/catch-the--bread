@@ -70,4 +70,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgments
 - Inspired by classic arcade-style games.
 - Audio files sourced from [Pixabay](https://pixabay.com).
-- Created by [Your Name or Handle, e.g., @coding.stella].
+- Created by [Sanket Bharadwaj].
