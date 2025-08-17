@@ -1,0 +1,96 @@
+    :root {
+      background-color: #7DC8CF;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-variant-numeric: tabular-nums;
+      --game-width: 450px;
+      --game-height: 680px;
+    }
+
+    *,
+    :after,
+    :before {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(to bottom, #7DC8CF, #B3E5FC);
+      overflow: hidden;
+    }
+
+    .frame {
+      border: 6px solid #67442b;
+      border-radius: 16px;
+      background: #67442b;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      max-width: 90vw;
+      max-height: 90vh;
+    }
+
+    #game {
+      border-radius: 10px;
+      user-select: none;
+      width: var(--game-width);
+      height: var(--game-height);
+    }
+
+    .toast {
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .toast:hover {
+      transform: scale(1.1);
+    }
+
+    .toast__wings {
+      animation: wings-flapping linear infinite 0.4s;
+      transform-origin: center 85%;
+      pointer-events: none;
+    }
+
+    .toast__eyes {
+      animation: blink linear infinite 2s;
+      transform-origin: center;
+    }
+
+    #start-screen, #game-over-screen {
+      font-size: 36px;
+      text-anchor: middle;
+      pointer-events: none;
+    }
+
+    .button {
+      cursor: pointer;
+      pointer-events: auto;
+      transition: fill 0.2s ease;
+    }
+
+    .button:hover {
+      fill: #ffcc00;
+    }
+
+    @keyframes wings-flapping {
+      0%, 100% { scale: 1 1; }
+      50% { scale: 1 0.8; }
+    }
+
+    @keyframes blink {
+      0%, 90% { scale: 1 1; }
+      95%, 100% { scale: 1 0; }
+    }
+
+    @media (max-width: 500px) {
+      :root {
+        --game-width: 350px;
+        --game-height: 500px;
+      }
+      #start-screen, #game-over-screen {
+        font-size: 24px;
+      }
+    }
