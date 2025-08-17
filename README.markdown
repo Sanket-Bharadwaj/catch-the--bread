@@ -14,7 +14,7 @@ A fun and interactive browser-based game where players catch falling toast slice
 - [Acknowledgments](#acknowledgments)
 
 ## Demo
-Play the game live at [insert live demo link here, if hosted].
+Play the game live at [HERE](https://catchthebread.vercel.app/).
 
 ## Features
 - **Interactive Gameplay**: Click on falling toast to score points.
@@ -34,11 +34,11 @@ Play the game live at [insert live demo link here, if hosted].
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/toast-catcher-game.git
+   git clone https://github.com/Sanket-Bharadwaj/catch-the-bread.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd toast-catcher-game
+   cd catch-the-bread
    ```
 3. Open `index.html` in a web browser to play the game locally.
 
